@@ -1,7 +1,7 @@
 Package.describe({
   name: "gwendall:jquery-animation-callback",
   summary: "Callback for animation end",
-  version: "0.1.1",
+  version: "0.1.2",
   git: "https://github.com/gwendall/meteor-jquery-animation-callback.git"
 });
 

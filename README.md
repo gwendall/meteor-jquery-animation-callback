@@ -13,16 +13,15 @@ meteor add gwendall:jquery-animation-callback
 Methods
 -------
 
-**$(selector).onAnimationEnd(callback, animationName)**  
-``animationName`` allows to set the callback on a given animation (or multiple animations if you pass an array).
-
+**$(selector).onAnimationEnd(callback)**  
 **$(selector).onTransitionEnd(callback)**  
+**$(selector).onAnimationOrTransitionEnd(callback)**  
 
 Example
 -------
 
 ``` javascript
-$(".item").onAnimationEnd(function(animationName) {
-  console.log("The animation '" + animationName + "' ended on this element.");
-}, ["fadeIn", "fadeOut"]);
+$(".item").onAnimationEnd(function() {
+  console.log("The animation ended on this element.");
+});
 ```
